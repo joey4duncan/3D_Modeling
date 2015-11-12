@@ -5,9 +5,9 @@
 
 class Rectangle : public 2Dshape {
 private:
-	double x,y;
+	double x,y,w,h;
 public:
-	Rectangle(double x, double y) : x(x), y(y){}
+	Rectangle(double x, double y, double w, double h) : x(x), y(y), w(w), h(h){}
 	double area() const;
 	double perimeter() const;
 	void drawCircle(int color) const;	//draw a circle in a 2D coordinate system
